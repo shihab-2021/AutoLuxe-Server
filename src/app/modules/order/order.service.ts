@@ -63,10 +63,10 @@ const createOrder = async (
     order_id: order._id,
     currency: "BDT",
     customer_name: userData.name,
-    customer_address: userData.address,
+    customer_address: userData.address || "Bangladesh",
     customer_email: userData.email,
-    customer_phone: userData.phone,
-    customer_city: userData.city,
+    customer_phone: userData.phone || "01384837384",
+    customer_city: userData.city || "Dhaka",
     client_ip,
   };
 
